@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={raleway.className}>
         <Header />
-        <main>{children}</main>
+        <main className="bg-white mx-5">{children}</main>
       </body>
     </html>
   );

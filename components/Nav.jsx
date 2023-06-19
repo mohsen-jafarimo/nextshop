@@ -9,7 +9,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="bg-white shadow p-5 flex fixed top-0 left-0 right-0 justify-between backdrop-blur-md items-center  text-blue-700">
+    <div className="bg-white shadow p-5 flex fixed top-0 left-0 right-0 z-50 justify-between backdrop-blur-md items-center  text-blue-700">
       <h2 className="text-2xl font-bold">My Shop</h2>
       <Menu as="div" className="relative inline-block text-left md:hidden">
         <div>
