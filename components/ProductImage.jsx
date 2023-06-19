@@ -12,7 +12,7 @@ const ProductImage = ({ product, fill }) => {
           src={product.image}
           fill
           alt={product.title}
-          className={`object-contain duration-500 ease-in-out group-hover:opacity-75 ${
+          className={`object-contain max-w-xs duration-500 ease-in-out group-hover:opacity-75 ${
             loading
               ? "scale-110 blur-2xl  grayscale"
               : "scale-100 blur-0 grayscale-0"

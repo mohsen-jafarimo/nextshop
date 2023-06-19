@@ -6,11 +6,14 @@ import {
   Bars3Icon,
   HomeIcon,
 } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className="bg-white shadow p-5 flex fixed top-0 left-0 right-0 z-50 justify-between backdrop-blur-md items-center  text-blue-700">
-      <h2 className="text-2xl font-bold">My Shop</h2>
+      <Link href={`/`}>
+        <h2 className="text-2xl font-bold">My Shop</h2>
+      </Link>
       <Menu as="div" className="relative inline-block text-left md:hidden">
         <div>
           <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
