@@ -1,13 +1,12 @@
 "use client";
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment } from "react";
 import {
   ArrowLeftOnRectangleIcon,
   Bars3Icon,
   HomeIcon,
 } from "@heroicons/react/20/solid";
 import Link from "next/link";
-
 export default function Header() {
   return (
     <div className="bg-white shadow p-5 flex fixed top-0 left-0 right-0 z-50 justify-between backdrop-blur-md items-center  text-blue-700">
@@ -151,21 +150,25 @@ export default function Header() {
       </Menu>
 
       <div className="hidden md:flex justify-between items-center space-x-3">
-        <button
-          className="bg-blue-600 text-white rounded px-4 py-2 font-bold
+        <Link href={`/register`}>
+          <button
+            className="bg-blue-600 text-white rounded px-4 py-2 font-bold
         hover:bg-transparent transition-all duration-75 hover:text-blue-500
         hover:border-2 hover:border-blue-600
         "
-        >
-          Register
-        </button>
-        <button
-          className="bg-white text-blue-600 rounded px-4 py-2 font-bold
-        hover:bg-blue-600 transition-all duration-75 hover:text-white
-        hover:border-2 hover:border-blue-600"
-        >
-          Login
-        </button>
+          >
+            Register
+          </button>
+        </Link>
+        <Link href={"/signin"}>
+          <button
+            className="bg-white text-blue-600 rounded px-4 py-2 font-bold
+      hover:bg-blue-600 transition-all duration-75 hover:text-white
+      hover:border-2 hover:border-blue-600"
+          >
+            Login
+          </button>
+        </Link>
       </div>
     </div>
   );

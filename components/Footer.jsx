@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="flex shadow flex-col items-center space-y-3 bg-gray-400 p-3 mt-4">
+    <div className="flex shadow flex-col items-center space-y-3 bg-gray-400 p-3 mt-48">
       <div className="flex flex-1 justify-evenly items-center space-x-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
