@@ -70,7 +70,7 @@ export default function Header() {
                         aria-hidden="true"
                       />
                     )}
-                    Login
+                    <Link href={`/signin`}>Login</Link>
                   </button>
                 )}
               </Menu.Item>
